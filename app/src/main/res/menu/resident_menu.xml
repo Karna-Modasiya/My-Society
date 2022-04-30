@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Notice Board"></item>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"></item>
+
+    <item
+        android:id="@+id/resetpass"
+        android:title="Reset Password"></item>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log out"></item>
+
+</menu>

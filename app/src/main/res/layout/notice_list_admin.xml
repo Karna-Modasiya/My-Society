@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/notice_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notice_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:fontFamily="monospace"
+                android:hint="Notice"
+                android:textSize="20dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notice_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginHorizontal="5dp"
+                    android:hint="Name"
+                    android:textSize="10dp"></TextView>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="2dp"
+                    android:hint="Time"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notice_head"
+            >
+            <TextView
+                android:id="@+id/notice_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:gravity="center_vertical"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:text="hello how are you"
+                android:textSize="16dp">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_delete">
+
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
